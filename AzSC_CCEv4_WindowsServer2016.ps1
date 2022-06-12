@@ -1099,7 +1099,7 @@ Configuration AzSC_CCEv4_WindowsServer2016 {
         # DataSource: BaselineRegistryRule
         # Ensure 'Allow Basic authentication' is set to 'Disabled'
        Registry 'AllowBasic' {
-          Ensure     = 'Present'
+        
           Key        = 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client'
           ValueName  = 'AllowBasic'
           ValueType  = 'DWord'
